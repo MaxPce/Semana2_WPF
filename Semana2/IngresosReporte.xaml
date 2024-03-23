@@ -1,0 +1,22 @@
+﻿<Window x:Class="Semana2.IngresosReporte"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana2"
+        mc:Ignorable="d"
+        Title="IngresosReporte" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgIngresos" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}"/>
+                <DataGridTextColumn Header="Placa" Binding="{Binding Placa}"/>
+                <DataGridTextColumn Header="Turno" Binding="{Binding Turno}"/>
+                <DataGridTextColumn Header="Conductor" Binding="{Binding Conductor}"/>
+                <DataGridTextColumn Header="Producto" Binding="{Binding Producto}"/>
+                <DataGridTextColumn Header="Peso" Binding="{Binding Peso}"/>
+                <DataGridTextColumn Header="Transporte" Binding="{Binding Transporte}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
